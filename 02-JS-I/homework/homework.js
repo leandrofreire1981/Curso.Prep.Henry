@@ -105,6 +105,7 @@ function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
   const resto = x % y;
+  return (resto);
 }
 
 function esPar(num) {
@@ -145,13 +146,14 @@ return(Math.pow(num, 3));
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  return(Math.pow(num, eponent));  
+  return(Math.pow(num, exponent));  
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-return(Math.round(num));
+const numRed = Math.round(num);
+return(numRed);
 }
 
 function redondearHaciaArriba(num) {
@@ -247,7 +249,7 @@ function esVocal(letra){
     }
   else
     Consel.log("Dato incorrecto");
-    
+
 }
 
 
