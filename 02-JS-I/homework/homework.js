@@ -244,7 +244,7 @@ function esVocal(letra){
   //Escribe tu código aquí
   if (letra.length == 1)
     {
-    if (letra == 'a' && letra == 'e' && letra == 'i' && letra == 'o' letra == 'u')
+    if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u')
       Console.log("Es vocal");
     }
   else
