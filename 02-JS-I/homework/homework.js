@@ -178,7 +178,7 @@ function esPositivo(numero) {
   if (numero > 0)
       return('Es positivo');
     else
-      return('Es Negativo');
+      return('Es negativo');
 }
 
 function agregarSimboloExclamacion(str) {
@@ -243,10 +243,10 @@ function esVocal(letra){
   if (letra.length == 1)
     {
     if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u')
-      Console.log('Es vocal');
+      return('Es vocal');
     }
   else
-    Console.log('Dato incorrecto');
+    return('Dato incorrecto');
 
 }
 
