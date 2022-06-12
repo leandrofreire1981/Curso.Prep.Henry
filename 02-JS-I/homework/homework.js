@@ -246,7 +246,7 @@ function esVocal(letra){
       Console.log('Es vocal');
     }
   else
-    Consel.log('Dato incorrecto');
+    Console.log('Dato incorrecto');
 
 }
 
