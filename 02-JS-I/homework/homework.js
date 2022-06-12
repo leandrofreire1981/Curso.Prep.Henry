@@ -35,14 +35,13 @@ function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  //const res = x + y;
-  //return (res);
+  const res = x + y;
+  return (res);
 }
 
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  
 }
 
 function multiplica(x, y) {
