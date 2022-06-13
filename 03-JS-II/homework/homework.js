@@ -146,13 +146,13 @@ function esPrimo(numero) {
   // Nota: Los números 0 y 1 NO son considerados números primos
 if (numero > 2)
   {
-    for (let i=2; i<numero; i++)
+    for (let i=2; i<numero/2; i++)
     {
       if ((numero%i)=== 0)
-        return (true);
+        return (false);
     }
   }
-return (false);
+return (true);
 }
 
 function esVerdadero(valor){
@@ -188,10 +188,10 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+var i=0;
 do
 {
-  let i=0;
-  numero = numero + 5;
+    numero = numero + 5;
 }
 while (i<8);
 return (numero);
