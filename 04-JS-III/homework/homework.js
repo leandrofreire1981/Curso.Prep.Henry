@@ -59,11 +59,10 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  var newPalabras = [palabras.length];
-  var a=0;
+  var newPalabras;
   for (let i =0; i<palabras.length; i++)
   {
-    newPalabras[i]=palabras[i]+' ';
+    newPalabras=palabras[i]+' ';
   }
   return (newPalabras);
 }
@@ -87,9 +86,9 @@ function agregarNumeros(numeros) {
   // Suma todos los enteros y devuelve el valor
   // Tu código:
   var total=0;
-  for (let i=0; i<array.length; i++)
+  for (let i=0; i<numeros.length; i++)
   {
-    total=total+array[i];
+    total=total+numeros[i];
   }
 return (total);
 }
@@ -128,8 +127,14 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
+  let producto=1;
   if (arguments.length===0)
     return (arguments);
+  for (let i=0; i<arguments.length; i++)
+  {
+    producto=producto*arguments[i];
+  }
+return(producto);
 }
 
 
@@ -173,14 +178,15 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
-  var ban=0;
-   for (let i=0; i<arreglo.length; i++)
-    for (let a=i+1; a<arreglo.length; a++)  
-    {
-      if (arreglo[i]===arreglo[a])
-        ban=1;
-    }
-return (ban);
+  let ban=0;
+  for (let a=0; a<arreglo.length; a++)  
+  {
+    if (arreglo[0]===arreglo[a])
+      ban++;
+  }
+if (ban===arreglo.length)
+  return (true);
+return (false);
 } 
 
 
@@ -195,7 +201,7 @@ function mesesDelAño(array) {
   {
     if (array[i]==='Enero' || array[i]==='Marzo' || array[i]==='Noviembre')
       {
-        meses[i]=array[i];
+        meses[ban]=array[i];
         ban++;
         if (ban==3)
           return (meses);
@@ -258,7 +264,7 @@ function continueStatement(numero) {
   let newValor=[]
   for (let i=0; i<10; i++)
     {
-      if (i==5)
+      if (i==4)
         continue;
       numero=numero+2;
       newValor[i]=numero;
