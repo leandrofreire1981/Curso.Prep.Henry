@@ -156,8 +156,8 @@ producto.calcularPrecioDescuento = function ()
 {
   let descuento=0;
   descuento=producto.precio - (producto.precio * producto.porcentajeDeDescuento);
-  return (descuento);
 };
+return (descuento);
 }
 
 // No modificar nada debajo de esta línea
