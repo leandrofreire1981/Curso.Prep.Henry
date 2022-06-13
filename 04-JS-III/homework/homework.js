@@ -62,9 +62,9 @@ function dePalabrasAFrase(palabras) {
   var newPalabras;
   for (let i =0; i<palabras.length; i++)
   {
-    newPalabras.push(palabras[i]);
+    newPalabras=newPalabras+palabras[i];
     if (i!=palabras.length-1)
-      newPalabras.push(' ');
+      newPalabras=newPalabras + (' ');
   }
   return (newPalabras);
 }
