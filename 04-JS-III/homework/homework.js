@@ -131,10 +131,16 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
 // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
+  let producto=1;
   if (arguments.length===0)
     return (0);
-  else
-    return(arguments);
+  else if (arguments.length===1)
+    return (arguments);
+  for (let i=0; i<arguments.length; i++)
+  {
+    producto=producto*arguments[i];
+  }
+  return i;
 }
 
 
@@ -260,14 +266,16 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
-  let ban=0;
-  let newValor=[]
+  let newValor=[];
   for (let i=0; i<10; i++)
     {
-      if (i==4)
+      if (i==5)
         continue;
-      numero=numero+2;
-      newValor[i]=numero;
+      else
+        {
+          numero=numero+2;
+          newValor[i]=numero;
+        }
     }
   return (newValor);
 }
