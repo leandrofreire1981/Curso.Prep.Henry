@@ -174,7 +174,7 @@ function tablaDelSeis(){
     {
       tabla[i] = 6 * i; 
     }  
-  return (tabla);
+  return (tabla[]);
 }
 
 function tieneTresDigitos(numero){
