@@ -62,7 +62,9 @@ function dePalabrasAFrase(palabras) {
   var newPalabras;
   for (let i =0; i<palabras.length; i++)
   {
-    newPalabras=palabras[i]+' ';
+    newPalabras.push(palabras[i]);
+    if (i!=palabras.length-1)
+      newPalabras.push(' ');
   }
   return (newPalabras);
 }
@@ -125,7 +127,7 @@ return(mayor);
 
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
-  // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
+// Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
   let producto=1;
   if (arguments.length===0)
