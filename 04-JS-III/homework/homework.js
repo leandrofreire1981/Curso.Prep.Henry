@@ -26,11 +26,12 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  let newArray=[];
   for (let i=0; i<array.lenth; i++)
   {
-    array[i]=array[i]+1; 
+    newArray[i]=array[i]+1; 
   }
-return(array);
+return(newArray);
 }
 
 
@@ -59,14 +60,13 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  var newPalabras = [];
+  var newPalabras = [palabras.length];
   var a=0;
-  for (let i =0; i<(palabras.length*2)-1; i=i+2)
+  for (let i =0; i<palabras.length; i++)
   {
-    newPalabras[i]=palabras[a];
-    newPalabras[i+1]=' ';
-    a++;
+    newPalabras[i]=palabras[i]+' ';
   }
+  return (newPalabras);
 }
 
 
