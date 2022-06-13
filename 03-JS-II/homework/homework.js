@@ -172,7 +172,7 @@ function tablaDelSeis(){
   var tabla = new Array(10);
   for (var i=0; i<10; i++)
     {
-      tabla[i] = 6 * (i+1); 
+      tabla[i+1] = 6 * (i+1); 
     }  
   return (tabla);
 }
