@@ -149,7 +149,7 @@ if (numero === 0 || numero === 1)
 
 if (numero > 2)
   {
-    for (let i=2; i<numero/2; i++)
+    for (let i=2; i<=numero/2; i++)
     {
       if ((numero%i)=== 0)
         return (false);
@@ -174,7 +174,7 @@ function tablaDelSeis(){
   let tabla = [];
   for (let i=1; i<11; i++)
     {
-      tabla[i-1] = 6 * (i); 
+      tabla[i-1] = 6 * (i-1); 
     }  
   return (tabla);
 }
