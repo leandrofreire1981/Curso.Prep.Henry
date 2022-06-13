@@ -61,8 +61,8 @@ function nuevoUsuario(nombre, email, password) {
   {
     nombre: nombre,
     email: email,
-    pasword: pasword,
-  }
+    password: password,
+  };
 return objeto;
 }
 
