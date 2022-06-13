@@ -140,7 +140,7 @@ function multiplicarArgumentos() {
   {
     producto=producto*arguments[i];
   }
-  return i;
+  return (producto);
 }
 
 
@@ -274,7 +274,7 @@ function continueStatement(numero) {
       else
         {
           numero=numero+2;
-          newValor[i]=numero;
+          newValor.push(numero);
         }
     }
   return (newValor);
