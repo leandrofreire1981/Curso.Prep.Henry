@@ -10,7 +10,7 @@ function crearUsuario() {
   // Tu código:
   class Usuario 
   {
-    constructor usuario (usuario, nombre, email, password)
+    constructor (usuario, nombre, email, password)
     {
       
         this.usuario= usuario,
