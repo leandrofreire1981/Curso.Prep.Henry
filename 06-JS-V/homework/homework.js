@@ -10,11 +10,11 @@ function crearUsuario() {
   // Tu código:
   const Usuario =  function (usuario, nombre, email, password)
   {
-    usuario: usuario,
-    nombre: nombre,
-    email: email,
-    password: password,
-    saludar: function ()
+    usuario= usuario,
+    nombre= nombre,
+    email= email,
+    password= password,
+    saludar= function ()
     {
       return ('Hola, mi nombre es ' + nombre);
     }
