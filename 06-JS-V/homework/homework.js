@@ -8,7 +8,7 @@ function crearUsuario() {
   // {{nombre}} debe ser el nombre definido en cada instancia
   // Devuelve la clase
   // Tu código:
-  const Usuario =  function (usuario, nombre, email, password)
+  const Usuario = new function (usuario, nombre, email, password)
   {
     usuario= usuario,
     nombre= nombre,
