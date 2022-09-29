@@ -10,6 +10,7 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+  
 }
 
 
@@ -43,7 +44,18 @@ function capicua(numero){
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
+  
+  let numStr = numero.toString()
+  arrayCadena = numStr.split("")
+  let reverse = arrayCadena.reverse()
+  reverse = reverse.join("")
+  console.log(reverse)
+  if(reverse===numStr)
+    return 'Es capicua'
+  return 'No es capicua'
 }
+
+
 
 
 function deleteAbc(cadena){
